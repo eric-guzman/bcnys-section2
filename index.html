@@ -247,7 +247,7 @@
     <div class="cobrand-bar">
       <div class="cobrand-side">
         <div class="logo">🏙️</div>
-        <span class="cobrand-label">Business Council of New York</span>
+        <span class="cobrand-label">Business Council of New York State</span>
       </div>
       <div class="cobrand-sep">presented by</div>
       <div class="cobrand-side">
@@ -359,7 +359,7 @@
     <div class="cobrand-bar compact">
       <div class="cobrand-side">
         <div class="logo">🏙️</div>
-        <span class="cobrand-label">Business Council of New York</span>
+        <span class="cobrand-label">Business Council of New York State</span>
       </div>
       <div class="cobrand-sep">presented by</div>
       <div class="cobrand-side">
@@ -1624,7 +1624,7 @@ function makeHeaderBanner(titleLine, subLine) {
     children: [
       new DOCX.Paragraph({
         spacing: { after: 80 },
-        children: [ new DOCX.TextRun({ text: 'BUSINESS COUNCIL OF NEW YORK', bold: true, color: W.blueLight, size: 16, characterSpacing: 40, font: 'Arial' }) ]
+        children: [ new DOCX.TextRun({ text: 'BUSINESS COUNCIL OF NEW YORK STATE', bold: true, color: W.blueLight, size: 16, characterSpacing: 40, font: 'Arial' }) ]
       }),
       new DOCX.Paragraph({
         spacing: { after: 60 },
@@ -1981,7 +1981,7 @@ function buildAggregateReport(subs) {
 
   children.push(makeDivider());
   children.push(makePara('About this diagnostic', { bold: true, color: W.navy, size: 22, before: 160, after: 80 }));
-  children.push(makePara('This report aggregates responses from executives attending the Business Council of New York board meeting. The diagnostic covers the eight parameters that drive AI success: Culture & Strategy, Workforce Availability, Workforce Re-engineering & Innovation, Risk & Governance, Data for AI, AI Engineering, AI Ecosystem, and Operations & Sustainment.', { color: W.gray, size: 18, after: 80 }));
+  children.push(makePara('This report aggregates responses from executives attending the Business Council of New York State board meeting. The diagnostic covers the eight parameters that drive AI success: Culture & Strategy, Workforce Availability, Workforce Re-engineering & Innovation, Risk & Governance, Data for AI, AI Engineering, AI Ecosystem, and Operations & Sustainment.', { color: W.gray, size: 18, after: 80 }));
   children.push(makePara("Responses are advisory and intended to inform executive dialogue and the Council's programming priorities.", { color: W.gray, italics: true, size: 18 }));
 
   return children;
@@ -1989,7 +1989,7 @@ function buildAggregateReport(subs) {
 
 function buildDoc(children) {
   return new DOCX.Document({
-    creator: 'Business Council of New York',
+    creator: 'Business Council of New York State',
     title: 'AI Readiness Diagnostic',
     styles: {
       default: { document: { run: { font: 'Arial', size: 22 } } }
@@ -2071,7 +2071,7 @@ function pdfHeaderBanner(doc, title, subtitle) {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(8);
   doc.setTextColor.apply(doc, PDF_COLORS.blueLight);
-  doc.text('BUSINESS COUNCIL OF NEW YORK', 36, 26);
+  doc.text('BUSINESS COUNCIL OF NEW YORK STATE', 36, 26);
   // Title
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(20);
