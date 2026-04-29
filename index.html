@@ -291,6 +291,11 @@
   .setup-result.err { background: rgba(248, 113, 113, 0.08); border: 1px solid rgba(248, 113, 113, 0.3); color: #f87171; }
   .setup-result.info { background: rgba(96, 165, 250, 0.08); border: 1px solid rgba(96, 165, 250, 0.3); color: #93c5fd; }
   .setup-result strong { color: inherit; font-weight: 700; }
+/* Force center alignment only on the Welcome screen */
+#screen-welcome .inner {
+  text-align: center;
+}
+ 
 </style>
 </head>
 <body>
@@ -309,6 +314,9 @@
     <span class="accenture-word">accenture</span>
   </div>
 </div>
+
+ <div class="screen active" id="screen-welcome">
+  <div class="inner">
  
     <h1>AI Success Parameters<br><span>Executive Readiness Diagnostic</span></h1>
     <p class="sub">
