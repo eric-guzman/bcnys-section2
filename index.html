@@ -1379,7 +1379,7 @@ function completeAssessment() {
   // user gesture, which was making the auto-download unreliable. We don't
   // await it; if it fails the user can still re-trigger from the thanks
   // screen via the "⬇ Download my individual report" button.
-  downloadIndividualDocx(record.id);
+  downloadIndividualPdf(record.id);
 
   // Send the respondent to a simple thank-you screen — NOT the presenter
   // (room aggregate) view. The aggregate view is reachable only via the
